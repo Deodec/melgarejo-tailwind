@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odyssey Universe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+     a {
+      text-decoration: none;
+      color: var(--primary-text);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    nav{
+      font-family: arcane;
+    }
+    
+  a:hover {
+      color: var(--accent-text);
+      transform: scale(1.1);
+      text-shadow: 0 0 16px var(--primary-text), 0 0 11px var(--accent-bg);
+    }
+
+    button, a.bg-primary {
+      background-color: var(--primary-bg);
+      color: var(--accent-text);
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover, a.bg-primary:hover {
+      background-color: var(--primary-text);
+      color: var(--accent-text);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(255, 111, 0, 0.5);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      background-color: var(--accent-bg);
+      color: var(--dark-bg);
+      font-weight: bold;
+      font-family: arcane;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: var(--dark-bg);
+    }
+
+    td, th {
+    padding: 100px;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0 0 24px;
+    overflow-wrap: break-word;
+    text-align: left;
+    }
+
+    footer p {
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+
+    @font-face {
+      font-family: h;
+      src: url(BeaufortforLOL-Bold.ttf);
+    }
+    @font-face {
+      font-family: p;
+      src: url(SpiegelSans-7Bold_TRIAL.otf);
+    }
+
+    @font-face {
+            font-family: arcane;
+            src: url(Arcane.otf);
+        }
+    body {
+      font-family: p;
+      background-color: var(--primary-bg);
+      color: var(--muted-text);
+    }
+    h1, h2, h3 {
+      font-family: h;
+    }
+    
+    :root {
+  --primary-bg: #1B2735;
+  --accent-bg: #4A90E2;
+  --dark-bg: #14213D;
+  --primary-text: #FF6F00;
+  --accent-text: #F1FA8C;
+  --muted-text: #8D99AE;
+  --heading-color: #1E90FF;
+  
+}
+
+  </style>
+</head>
+<body class="bg-dark text-white">
+  <!-- Header Section -->
+  <header class="bg-primary py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="30496c690147b541ebaff54c3e2cb30d9f33fdea-219x179.svg" alt="Placeholder Image" style="width: 110px; height: 70px;" class="shadow-lg" >
+      </div>
+      <nav class="space-x-9">
+        <a href="#" class="text-3xl font-bold text-accent hover:text-primary transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-shadow">
+          Home
+        </a>
+        <a href="#" class="text-3xl font-bold text-accent hover:text-primary transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-shadow">
+          Crew
+        </a>
+        <a href="#" class="text-3xl font-bold text-accent hover:text-primary transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-shadow">
+          Empire
+        </a>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <!-- Hero Section with Background Image Placeholder -->
+  <section class="bg-cover bg-center py-20 text-center" style="background-image: url('Morningstar_Concept_F.jpg');">
+    <div class="container mx-auto">
+      <h2 class="text-5xl font-extrabold mb-4" style="font-family: arcane; color: var(--accent-text); text-shadow: 6px 6px 6px rgba(0, 0, 0, 5);">
+        Explore the Odyssey
+      </h2>
+      <p class="text-3xl mb-8 text-white" style="font-family: arcane; background-color: rgba(0, 0, 0, 0.5); padding: 10px; margin-left: 50px; margin-right: 90px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); border-radius: 50px;">
+        Join the crew of the Morningstar as they battle the Demaxian Empire. From the heavily urbanized coreworlds to the outermost edge of the galaxy, adventure awaits!
+      </p>            
+      <a href="#" class="bg-primary text-xl">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Crew of the Morningstar Section -->
+  <section class="py-12 bg-cover bg-center" style="background-image: url('demaxian_bg.jpg');">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6" style="color: var(--primary-text)">Crew of the Morningstar</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-gray-700 rounded-lg">
+          <thead>
+            <tr class="bg-accent text-white text-2xl">
+              <th class="py-3 px-6">Name</th>
+              <th class="py-3 px-6">Role</th>
+              <th class="py-3 px-6">Vital Stats</th>
+              <th class="py-3 px-6">Lore</th>
+              <th class="py-3 px-6">Champion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Jinx -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Jinx</td>
+              <td class="py-4 px-6">Weapons Specialist, Navigator</td>
+              <td class="py-4 px-6">Age: Unknown, Abilities: Heavy Firepower <br> Weird Secret Crush: Ordinal Kayn. I know, right?</td>
+              <td class="py-4 px-6">Adept at building and/or destroying (but mostly destroying) an array of haphazard, highly unstable weapons for the Morning Star crew, Jinx pilots the ship into an endless barrage of extremely dangerous misadventures. She considers Malphite her best friend in the universe… mostly because she got him fired, but also because he can punch things really, really hard.</td>
+              <td class="py-4 px-6">
+                <img src="Skin_Splash_Odyssey_Jinx.webp" alt="Jinx" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+            <!-- Yasuo -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Yasuo</td>
+              <td class="py-4 px-6">Captain</td>
+              <td class="py-4 px-6">Age: 37, <br> Abilities: Master Swordsman<br>Shoulder lizard status: Adorable</td>
+              <td class="py-4 px-6">Handsome, talented, and wanting for literally nothing, he loaned out his services as a premier bodyguard of celebrities and imperial dignitaries, spending his nights in a drunken haze as he aimlessly wandered from high-end nightclub to high-end nightclub. He probably would have lived his entire life without a care in the world… had he not been framed for his brother's gruesome murder. </td>
+              <td class="py-4 px-6">
+                <img src="yasuo-lol-odyssey-splash-art-uhdpaper.com-hd-302.jpg" alt="Yasuo" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+            <!-- Malphite -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Malphite</td>
+              <td class="py-4 px-6">Security</td>
+              <td class="py-4 px-6">Height: 25 ft, Abilities: Immense Strength, Building Cute Little Ships In Bottles</td>
+              <td class="py-4 px-6">Malphite was once the pit boss of a deep space mining operation, until Jinx cracked the asteroid in half and got them both fired. His incredible loyalty to someone-who-is-very-obviously-a-psychopath has landed him in countless running battles across the galaxy, but he doesn't seem to mind. His alien biology has granted him a rock-hard carapace and big punchy fists, and you can go far in life with big punchy fists.</td>
+              <td class="py-4 px-6">
+                <img src="Skin_Splash_Odyssey_Malphite.webp" alt="Malphite" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+            <!-- Sona -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Sona</td>
+              <td class="py-4 px-6">Moon Wizard</td>
+              <td class="py-4 px-6">Age: 25, Abilities:<br> Ora Affinity, Not Talking</td>
+              <td class="py-4 px-6">One of the mysterious Templars, Sona has a curious affinity with ora—the divine, golden lifeblood of all civilization. Sona is able to commune with ora and use it as a weapon, shield, and personal confidant. It tells her secrets (probably), gossips about all the latest Templar drama (possibly), and sometimes the two of them cut giant robots in half with liquid, golden energy.</td>
+              <td class="py-4 px-6">
+                <img src="thumb-1920-946536.jpg" alt="Sona" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demaxian Empire Section -->
+  <section class="py-12 bg-cover bg-center" style="background-image: url('demaxian_bg.jpg');">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6" style="color: var(--heading-color)">The Demaxian Empire</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-gray-700 rounded-lg">
+          <thead>
+            <tr class="bg-primary text-white text-2xl">
+              <th class="py-3 px-6">Name</th>
+              <th class="py-3 px-6">Title</th>
+              <th class="py-3 px-6">Vital Stats</th>
+              <th class="py-3 px-6">Lore</th>
+              <th class="py-3 px-6">Champion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Inquisitor Kayn -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Shieda Kayn</td>
+              <td class="py-4 px-6">Empire Ordinal</td>
+              <td class="py-4 px-6">Age: 29,<br> Abilities: Audacity, Evil Monster Scythe? Yes indeedy</td>
+              <td class="py-4 px-6">A supremely confident military tactician in the Locus Armada, Shieda Kayn has ascended to become one of the Ordinals of the Demaxian Empire, carrying out the will of Emperor Jarvan IV himself. Kayn has become obsessed with harnessing as much raw ora as he can within his body, even though such things are forbidden—following the silent whispers of a strange, esoteric power, he believes this process will turn him into an invincible, immortal being... He is wrong.</td>
+              <td class="py-4 px-6">
+                <img src="thumb-1920-946532.jpg" alt="Kayn" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+            <!-- Emperor Jarvan IV -->
+            <tr class="border-b border-gray-700 text-xl">
+              <td class="py-4 px-6">Emperor Jarvan IV</td>
+              <td class="py-4 px-6">Ruler of the Demaxian Empire</td>
+              <td class="py-4 px-6">Age: 32, Leadership: Unmatched</td>
+              <td class="py-4 px-6">In the vast expanse of the cosmos, the Demaxian Empire stands as a shining beacon of order and authority, built on principles of honor, strength, and an unwavering belief in the empire's supremacy. At the heart of this galactic dominion is Emperor Jarvan IV, a proud and unyielding leader, who has sworn to bring unity and peace to a chaotic universe—by force if necessary. Jarvan IV was raised in the corridors of Demaxian power, groomed from birth to be the ideal ruler. His upbringing was strict, filled with the discipline of the Empire’s military traditions and the weight of his forefathers' legacy.</td>
+              <td class="py-4 px-6">
+                <img src="Jarvan_IV_GloriousArmadaSkin_WR.webp" alt="Jarvan IV" style="width: 6000px; height: 400px;" class="rounded-lg">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-500">&copy; 2024 Riot Games Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
